@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    tools:context=".FlightControl_2">
+
+    <RelativeLayout
+        android:id="@+id/layout_joystick"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginRight="2000dp"
+        android:background="@drawable/image_button_bg"
+        android:text="Send parcelable"
+        android:onClick="onClick"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_joystick2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/image_button_bg"
+        android:text="Send parcelable"
+        android:onClick="onClick"
+        android:layout_alignTop="@+id/layout_joystick"
+        android:layout_alignParentEnd="true">
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:id="@+id/forward"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/throttle" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="backward"
+        android:id="@+id/backward"
+        android:layout_below="@+id/forward"
+        android:layout_alignStart="@+id/forward" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="F.BW"
+        android:id="@+id/F_CW"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="F.FW"
+        android:id="@+id/F_CCW"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/forward" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="B.FW"
+        android:id="@+id/B_CW"
+        android:layout_below="@+id/forward"
+        android:layout_toEndOf="@+id/B_CCW" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="B.BW"
+        android:id="@+id/B_CCW"
+        android:layout_below="@+id/F_CW"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/throttle"
+        android:rotation="270"
+        android:indeterminate="false"
+        android:focusable="false"
+        android:layout_marginTop="36dp"
+        android:layout_alignTop="@+id/layout_joystick"
+        android:layout_toEndOf="@+id/B_CW" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pidonoff"
+        android:checked="false"
+        android:text="PID On/Off"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pad On/Off"
+        android:id="@+id/padonoff"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/pidonoff" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Servo Run"
+        android:id="@+id/runservo"
+        android:layout_alignStart="@+id/servo_stop" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Servo Stop"
+        android:id="@+id/servo_stop"
+        android:layout_below="@+id/forward"
+        android:layout_toEndOf="@+id/forward" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="C.Right"
+        android:id="@+id/c_right"
+        android:layout_below="@+id/B_CCW"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="C.Left"
+        android:id="@+id/c_left"
+        android:layout_below="@+id/backward"
+        android:layout_toStartOf="@+id/backward" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/driving_right"
+        android:layout_marginRight="40dp"
+        android:layout_above="@+id/layout_joystick2"
+        android:layout_alignEnd="@+id/pidonoff" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/driving_left"
+        android:layout_alignTop="@+id/driving_right"
+        android:layout_toStartOf="@+id/driving_right" />
+
+    <Button
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="Servo Init"
+        android:id="@+id/servo_init"
+        android:layout_below="@+id/backward"
+        android:layout_alignEnd="@+id/servo_stop"
+        android:layout_toEndOf="@+id/backward" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Go!"
+        android:id="@+id/driving_go"
+        android:layout_above="@+id/driving_right"
+        android:layout_alignStart="@+id/driving_left"
+        android:layout_alignEnd="@+id/driving_left" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="STOP!"
+        android:id="@+id/driving_stop"
+        android:layout_above="@+id/driving_right"
+        android:layout_alignEnd="@+id/driving_right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMERGENCY"
+        android:id="@+id/emergency"
+        android:layout_below="@+id/driving_go"
+        android:layout_toStartOf="@+id/driving_left" />
+
+</RelativeLayout>

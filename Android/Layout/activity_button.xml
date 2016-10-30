@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:text="PID Tuning"
+        android:id="@+id/pid_btn"
+        android:layout_below="@+id/servo_btn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:text="Flight Controller"
+        android:id="@+id/flight_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:text="Servo Controller"
+        android:id="@+id/servo_btn"
+        android:layout_below="@+id/flight_btn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:text="Wireless Communication"
+        android:id="@+id/wire_btn"
+        android:layout_below="@+id/pid_btn"
+        android:layout_alignStart="@+id/pid_btn" />
+
+</LinearLayout>
