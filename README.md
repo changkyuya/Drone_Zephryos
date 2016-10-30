@@ -20,7 +20,16 @@ Raspberry Pi (Sub MCU & TCP/IP Connection)
 
 Android (Main Contorller and Sending data to Raspberry Pi
 
+# Awrad
+
+third prize of Korea intelligent Robot Contest(KIRC), prize 3,000,000 won
+
+
+thrid prize of the whole country robot Contest(kyungnam Univ), prize 200,000 won
+
+# Contact
+
 if you want to Contact Me, 
-Please sending E-mail
+Please send E-mail
 changkyuya@gmail.com
 
