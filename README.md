@@ -25,7 +25,7 @@ Android (Main Contorller and Sending data to Raspberry Pi
 third prize of Korea intelligent Robot Contest(KIRC), 3,000,000 won
 
 
-thrid prize of the whole country robot Contest(kyungnam Univ), 200,000 won
+thrid prize of the whole country Student Robot Contest(kyungnam Univ), 200,000 won
 
 # Contact
 
