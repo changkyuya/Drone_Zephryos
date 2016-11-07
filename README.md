@@ -31,6 +31,9 @@ third prize of Korea intelligent Robot Contest(KIRC), 3,000,000 won
 
 thrid prize of the whole country Student Robot Contest(kyungnam Univ), 200,000 won
 
+
+first prize of EE Global Tech(Hankyong univ)
+
 # Contact
 
 if you want to Contact Me, 
