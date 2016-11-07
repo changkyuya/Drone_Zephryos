@@ -10,7 +10,7 @@ But, this mechanic can Flying and Driving .
 
 Only Using Propeller's Power(wind power)
 
-Using Arduino & Raspberry Pi(lava Language) & Android Application
+Using Arduino & Raspberry Pi(Java) & Android Application(Android Studio)
 
 Arduino (Main MCU)
 
@@ -19,6 +19,10 @@ Raspberry Pi (Sub MCU & TCP/IP Connection)
 
 
 Android (Main Contorller and Sending data to Raspberry Pi
+
+# Video
+
+https://drive.google.com/open?id=0B0t9mY5j2u0pX3I2QnVwWkdvUWc
 
 # Awrad
 
